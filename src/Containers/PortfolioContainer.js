@@ -1,0 +1,77 @@
+import React, { useState } from "react";
+import AboutMe from "../Components/AboutMe";
+import ProjectHomeCard from "../Components/ProjectHomeCard";
+import SkillList from "../Components/SkillList";
+
+const PortfolioContainer = () => {
+
+    const [tom, setTom] = useState({
+        name: 'Thomas Grant',
+        email: 'grntthomasronnie@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/thomas-grant-1063b126a/',
+        github: 'https://github.com/TomRgrant',
+        skills: [
+            {name: 'JavaScript', logo: 'https://miro.medium.com/v2/resize:fit:1024/1*S-nV902O1yWwpFbxn0P_xA.png', alt: 'javascript logo'},
+            {name: 'React', logo: 'https://nextsoftware.io/files/images/logos/main/reactjs-logo.png', alt: 'react logo'},
+            {name: 'Python', logo: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png', alt: 'python logo'},
+            {name: 'SQL', logo: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png', alt: 'sql logo'},
+            {name: 'HTML', logo: 'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png', alt: 'html logo'},
+            {name: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png', alt: 'css logo'},
+            {name: 'Git', logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png', alt: 'git logo'},
+            {name: 'GitHub', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png', alt: 'github logo'},
+            {name: 'Flask', logo: 'https://d4.alternativeto.net/jmtD1yk6SqztgpCSDhUSho4OBc5dw1d9eIdiZktqzOY/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9mbGFza18yNzAwNC5wbmc.png', alt: 'flask logo'},
+        ],
+        projects: [{
+            name: "Who's That Pokemon!?",
+            skills: ["JavaScript", "React", "HTML", "CSS", "github", "sql"],
+            description: `Guess the pokemon afa anfa as q aei a fakf a
+            af af afaf aif ie a a ef a nafn as nasfl asn fnae danf 
+            faljf afaf afafks fasfjeijf faifj asfm sakfaskfm`,
+            thumbnail: "https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg",
+            screenshots: [],
+            videoDemo: "youtube link........",
+        },
+        {
+            name: "Gym Admin app",
+            skills: ["Python", "flask", "HTML", "CSS"],
+            description: 'gym app',
+            thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
+            screenshots: [],
+            videoDemo: "",
+        }
+    ]
+    }
+    );
+
+
+
+return(
+    <>
+        <section className="about-me">
+            <div className="about-me-box">
+                <AboutMe tom={tom} />
+            </div>
+
+            <div className="pfp" >
+                <img className="pfp-img" src="https://cdn.dribbble.com/users/2280661/screenshots/11467370/shot-cropped-1589802184973.png" alt="8Bit img of the face of Thomas Grant" />
+            </div>
+        </section>
+
+        <section className="skill-display">
+            <h2 className="home-view-skills">Skills</h2>
+            <SkillList className="skill-list" skills={tom.skills} />
+        </section>
+
+        <section className="home-project-display">
+            <h2 className="home-view-projects-title">View My Projects</h2>
+            <div className="home-project-display-elements">
+                <ProjectHomeCard projects={tom.projects} skills={tom.skills} />
+            </div>
+        </section>
+    </>
+);
+
+
+};
+
+export default PortfolioContainer;

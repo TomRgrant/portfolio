@@ -36,3 +36,175 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Nav Bar section --------------------------------------------*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  padding: 1em;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-pages {
+  margin-left: 1em;
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.nav-pages > a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  padding: .3em;
+  background-color: grey;
+  width: 5em;
+}
+
+.nav-links {
+  margin-right: 1em;
+  display: flex;
+  gap: 2em;
+  height: 60px;
+}
+
+.nav-links > img {
+  height: 100%;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+/* About Me Section ---------------------------------------- */
+.about-me {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.about-me-box {
+  display: flex;
+  align-items: center;
+}
+
+.pfp {
+
+}
+
+.pfp-img {
+  height: 100%;
+  width: 600px;
+}
+
+.about-me-info-box {
+  border: 3px solid red;
+  border-radius: 40px;
+}
+
+.about-me-text {
+  font-size: x-large;
+}
+
+.about-me-contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 1px solid black;
+  font-size: x-large;
+}
+
+.about-me-contact-info > a {
+  text-decoration: underline;
+  color: black;
+}
+
+/* Skill display section --------------------------------------- */
+.skill-display {
+  width: 50%;
+  margin: auto;
+}
+
+.skill-logo {
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Home page project display section ------------------------------------ */
+.home-project-display {
+  width: 80%;
+  margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.home-project-display-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.home-project-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border: 1px solid black;
+  border-radius: 20px;
+  gap: 15px;
+  background-color: grey;
+}
+
+.home-project-skill {
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.home-project-info {
+  padding-right: 1em;
+  margin-right: 20px;
+}
+
+.home-project-thumbnail-box {
+  padding: 1em;
+}
+
+.home-project-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.home-project-thumbnail {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.home-view-projects-title {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.home-view-skills {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+
+
+
+
