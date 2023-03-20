@@ -14,7 +14,7 @@ return(
             <a href={tom.github}>GitHub</a>
         </div>
         <div className="about-me-text">
-            <p>About Me Lorem Ipsum shjhaflaf fejfnask snfafahf ajslfa asnfl ds qajj las afjasf ajf lahf akaf
+            <p className="margin-0">About Me Lorem Ipsum shjhaflaf fejfnask snfafahf ajslfa asnfl ds qajj las afjasf ajf lahf akaf
                 lakkfjalsl lajfla f adfhyqifuues afj johadhalf laf ahdlaf lahhks l afahfaf naae iahflha
                 afa jafsk kan lkfndl lajlkf oijqopqj d fhsfhqhf sfhshfhfoah ahfeehfuka huahf
                 ajfaj fjajajflaj jfljalfjleajf adjf jafieajfl ajfjalwif feaijfsjf ajiejfa iafel iaejf l

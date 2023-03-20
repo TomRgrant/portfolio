@@ -23,7 +23,7 @@ const PortfolioContainer = () => {
         ],
         projects: [{
             name: "Who's That Pokemon!?",
-            skills: ["JavaScript", "React", "HTML", "CSS", "github", "sql"],
+            skills: ["JavaScript", "React", "HTML", "CSS", "github"],
             description: `Guess the pokemon afa anfa as q aei a fakf a
             af af afaf aif ie a a ef a nafn as nasfl asn fnae danf 
             faljf afaf afafks fasfjeijf faifj asfm sakfaskfm`,

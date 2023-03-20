@@ -37,7 +37,9 @@
   }
 }
 
-
+.margin-0 {
+  margin: 0;
+}
 
 /* Nav Bar section --------------------------------------------*/
 .nav-bar {
@@ -109,6 +111,7 @@
 
 .about-me-text {
   font-size: x-large;
+  padding: 0.5em;
 }
 
 .about-me-contact-info {
@@ -132,10 +135,11 @@
 }
 
 .skill-logo {
-  height: 70px;
+  height: 80px;
   border: 1px solid black;
   border-radius: 40px;
   background-color: white;
+  margin-top: 30px;
 }
 
 .skill-list {
@@ -162,12 +166,11 @@
   grid-template-columns: 60% 40%;
   border: 1px solid black;
   border-radius: 20px;
-  gap: 15px;
   background-color: grey;
 }
 
 .home-project-skill {
-  height: 35px;
+  height: 45px;
   border: 1px solid black;
   border-radius: 50px;
   background-color: white;
@@ -184,13 +187,13 @@
 
 .home-project-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
 }
 
 .home-project-thumbnail {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 10px;
 }
 
