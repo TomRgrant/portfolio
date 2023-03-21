@@ -30,11 +30,11 @@ return(
         </div>
 
         <div className="home-project-info">
-            <h4>{selectedProject.name}</h4>
+            <h2 className="project-name">{selectedProject.name}</h2>
             <div className="home-project-skills">
                 {skillLogoNodes}
             </div>
-            <p>{selectedProject.description}</p>
+            <p className="project-description">{selectedProject.description}</p>
         </div>
     </div>
     </>

@@ -10,8 +10,8 @@ return(
     <section className="about-me-info-box">
         <div className="about-me-contact-info">
             <p>Email: {tom.email}</p>
-            <a href={tom.linkedin}>LinkedIn</a>
-            <a href={tom.github}>GitHub</a>
+            <a className="about-me-links" href={tom.linkedin}>LinkedIn</a>
+            <a className="about-me-links" href={tom.github}>GitHub</a>
         </div>
         <div className="about-me-text">
             <p className="margin-0">About Me Lorem Ipsum shjhaflaf fejfnask snfafahf ajslfa asnfl ds qajj las afjasf ajf lahf akaf

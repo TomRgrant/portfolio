@@ -4,16 +4,14 @@ const NavBar = () => {
 
 
 
-
-
 return(
     <>
         <section className="nav-bar">
             <div className="nav-pages">
-                    <a href="">Home</a>
-                    <a href="">About Me</a>
-                    <a href="">Skills</a>
-                    <a href="">Projects</a>
+                <button class="button-33" role="button">Home</button>
+                <button class="button-33" role="button">About Me</button>
+                <button class="button-33" role="button">Skills</button>
+                <button class="button-33" role="button">Projects</button>
             </div>
 
             <div className="nav-links">

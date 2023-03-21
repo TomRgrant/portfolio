@@ -6,7 +6,7 @@ const Skill = ({skill}) => {
 
 return(
     <>
-    <div>
+    <div className="skill-display-logo">
         <img className="skill-logo" src={skill.logo} alt={skill.alt} />
         <h1>{skill.name}</h1>
     </div>

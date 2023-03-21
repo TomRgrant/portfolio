@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import AboutMe from "../Components/AboutMe";
 import ProjectHomeCard from "../Components/ProjectHomeCard";
 import SkillList from "../Components/SkillList";
+import pfp from "../images/pfp.png"
 
 const PortfolioContainer = () => {
 
     const [tom, setTom] = useState({
         name: 'Thomas Grant',
+        pfp: pfp,
         email: 'grntthomasronnie@gmail.com',
         linkedin: 'https://www.linkedin.com/in/thomas-grant-1063b126a/',
         github: 'https://github.com/TomRgrant',
@@ -38,6 +40,30 @@ const PortfolioContainer = () => {
             thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
             screenshots: [],
             videoDemo: "",
+        },
+        {
+            name: "Gym Admin app",
+            skills: ["Python", "flask", "HTML", "CSS"],
+            description: 'gym app',
+            thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
+            screenshots: [],
+            videoDemo: "",
+        },
+        {
+            name: "Gym Admin app",
+            skills: ["Python", "flask", "HTML", "CSS"],
+            description: 'gym app',
+            thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
+            screenshots: [],
+            videoDemo: "",
+        },
+        {
+            name: "Gym Admin app",
+            skills: ["Python", "flask", "HTML", "CSS"],
+            description: 'gym app',
+            thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
+            screenshots: [],
+            videoDemo: "",
         }
     ]
     }
@@ -47,27 +73,32 @@ const PortfolioContainer = () => {
 
 return(
     <>
-        <section className="about-me">
-            <div className="about-me-box">
-                <AboutMe tom={tom} />
-            </div>
+    <div className="wrapper">
 
-            <div className="pfp" >
-                <img className="pfp-img" src="https://cdn.dribbble.com/users/2280661/screenshots/11467370/shot-cropped-1589802184973.png" alt="8Bit img of the face of Thomas Grant" />
-            </div>
-        </section>
+            <div className="z1">
+            <section className="about-me">
+                <div className="about-me-box">
+                    <AboutMe tom={tom} />
+                </div>
 
-        <section className="skill-display">
-            <h2 className="home-view-skills">Skills</h2>
-            <SkillList className="skill-list" skills={tom.skills} />
-        </section>
+                <div className="pfp" >
+                    <img className="pfp-img" src={tom.pfp} />
+                </div>
+            </section>
 
-        <section className="home-project-display">
-            <h2 className="home-view-projects-title">View My Projects</h2>
-            <div className="home-project-display-elements">
-                <ProjectHomeCard projects={tom.projects} skills={tom.skills} />
+            <section className="skill-display">
+                <h2 className="home-view-skills">Skills</h2>
+                <SkillList className="skill-list" skills={tom.skills} />
+            </section>
+
+            <section className="home-project-display">
+                <h2 className="home-view-projects-title">View My Projects</h2>
+                <div className="home-project-display-elements">
+                    <ProjectHomeCard projects={tom.projects} skills={tom.skills} />
+                </div>
+            </section>
             </div>
-        </section>
+    </div>
     </>
 );
 
