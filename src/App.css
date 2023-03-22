@@ -46,13 +46,8 @@
 /* Nav Bar section --------------------------------------------*/
 .nav-bar {
   display: flex;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  background-color: black;
   justify-content: space-between;
-  background: url(images/nav-background-4.jpg) no-repeat fixed;
-  background-size: cover;
-  background-position: left;
   align-items: center;
   margin: 0;
 }
@@ -83,20 +78,27 @@
   height: 70px;
 }
 
+.nav-links :hover {
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  transform: scale(1.15) rotate(4deg);
+  transition: 400ms;
+}
+
 .nav-links > img {
   height: 100%;
   border-radius: 50px;
   border: 1px solid black;
+  transition: all 600ms;
 }
 
 /* Nav button styling */
 
 .button-33 {
-  background-color: #fbd8c2;
-  text-shadow: 2px 2px #033faf;
+  background-color: #003075;
+  text-shadow: 2px 2px blue;
   border-radius:10px;
-  box-shadow: rgba(187, 70, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 163, 44, 0.15) 0 1px 2px,rgba(187, 142, 44, 0.15) 0 2px 4px,rgba(187, 158, 44, 0.15) 0 4px 8px,rgba(187, 163, 44, 0.15) 0 8px 16px,rgba(187, 149, 44, 0.15) 0 16px 32px;
-  color: rgb(213, 142, 11);
+  box-shadow: rgba(21, 68, 236, 0.2) 0 -25px 18px -14px inset,rgba(26, 97, 221, 0.15) 0 1px 2px,rgba(40, 64, 220, 0.15) 0 2px 4px,rgba(21, 70, 192, 0.15) 0 4px 8px,rgba(28, 72, 218, 0.15) 0 8px 16px,rgba(31, 58, 238, 0.15) 0 16px 32px;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -112,7 +114,7 @@
 }
 
 .button-33:hover {
-  box-shadow: rgba(187, 115, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 144, 44, 0.25) 0 1px 2px,rgba(187, 92, 44, 0.25) 0 2px 4px,rgba(187, 146, 44, 0.25) 0 4px 8px,rgba(187, 170, 44, 0.25) 0 8px 16px,rgba(187, 139, 44, 0.25) 0 16px 32px;
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
 
@@ -141,6 +143,12 @@
   width: 600px;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.pfp :hover {
+  /* box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  transform: scale(1) rotate(2deg);
+  transition: 400ms; */
 }
 
 .about-me-info-box {
@@ -172,12 +180,20 @@
 
 .about-me-links {
   text-shadow: 3px 3px #033faf;
+  transition: all 250ms;
+}
+
+.about-me-links:hover {
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(2deg);
+  transition: 400ms;
 }
 
 .about-me-contact-info > a {
   text-decoration: underline;
   color: white;
 }
+
 
 /* Skill display section --------------------------------------- */
 .skill-display {
@@ -269,6 +285,7 @@
 .home-project-info {
   padding-left: .5em;
   padding-right: .5em;
+  height: 100%;
 }
 
 .project-name {

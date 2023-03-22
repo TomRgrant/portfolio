@@ -26,9 +26,9 @@ const PortfolioContainer = () => {
         projects: [{
             name: "Who's That Pokemon!?",
             skills: ["JavaScript", "React", "HTML", "CSS", "github"],
-            description: `Guess the pokemon afa anfa as q aei a fakf a
-            af af afaf aif ie a a ef a nafn as nasfl asn fnae danf 
-            faljf afaf afafks fasfjeijf faifj asfm sakfaskfm`,
+            description: `Whos that pokemon is a SPA app that uses the pokemon api to 
+            create a game where the user is show a image of a pokemon, they then have
+            to guess it's name.`,
             thumbnail: "https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg",
             screenshots: [],
             videoDemo: "youtube link........",
