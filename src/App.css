@@ -60,49 +60,39 @@
   padding: 1em;
 }
 
-.nav-pages > a {
-  display: inline;
-  text-decoration: none;
-  color: black;
-  border: 1px solid gainsboro;
-  border-radius: 6px;
-  padding: .5em;
-  background-color: grey;
-  width: 5em;
-}
-
 .nav-links {
   margin-right: 1em;
   display: flex;
   gap: 2em;
   height: 70px;
+  border-radius: 50px;
+  transition: all 450ms;
 }
 
 .nav-links :hover {
   box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
-  transform: scale(1.15) rotate(4deg);
-  transition: 400ms;
+  transform: scale(1.1) rotate(4deg);
+  cursor: pointer;
 }
 
-.nav-links > img {
+.nav-links > a > img {
   height: 100%;
   border-radius: 50px;
   border: 1px solid black;
-  transition: all 600ms;
+  transition: all 450ms;
 }
 
 /* Nav button styling */
 
 .button-33 {
   background-color: #003075;
-  text-shadow: 2px 2px blue;
+  text-shadow: 2px 2px rgb(180, 7, 180);
   border-radius:10px;
   box-shadow: rgba(21, 68, 236, 0.2) 0 -25px 18px -14px inset,rgba(26, 97, 221, 0.15) 0 1px 2px,rgba(40, 64, 220, 0.15) 0 2px 4px,rgba(21, 70, 192, 0.15) 0 4px 8px,rgba(28, 72, 218, 0.15) 0 8px 16px,rgba(31, 58, 238, 0.15) 0 16px 32px;
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
+  font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
@@ -111,11 +101,13 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border: .1px solid black;
 }
 
 .button-33:hover {
   box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
+  border: .1px solid white;
 }
 
 /* About Me Section ---------------------------------------- */
@@ -129,9 +121,14 @@
 .about-me-box {
   display: flex;
   align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
 }
 
 .pfp {
+  width: 30%;
   padding: 1.5em;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -140,7 +137,7 @@
 
 .pfp-img {
   height: 100%;
-  width: 600px;
+  width: 100%;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -173,13 +170,13 @@
   font-size: xx-large;
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  width: 25em;
+  width: auto;
   margin: auto;
   border-radius: 20px;
 }
 
 .about-me-links {
-  text-shadow: 3px 3px #033faf;
+  text-shadow: 2px 2px rgb(180, 7, 180);
   transition: all 250ms;
 }
 
@@ -210,7 +207,7 @@
 }
 
 .skill-list {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   row-gap: .5em;
   column-gap: 1em;
@@ -227,7 +224,8 @@
 
 .skill-display > .home-view-skills {
   font-size: 3em;
-  text-shadow: 3px 3px #033faf;
+  font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
+  text-shadow: 2px 2px rgb(180, 7, 180);
   width: 4em;
   margin: auto;
   padding: .3em;
@@ -239,12 +237,13 @@
 /* Home page project display section ------------------------------------ */
 .home-project-display > .home-view-projects-title {
   font-size: 3em;
-  text-shadow: 3px 3px #033faf;
+  text-shadow: 2px 2px rgb(180, 7, 180);
   width: 8em;
   margin: auto;
   padding: .3em;
   box-shadow: rgba(0, 0, 0, 0.776) 0px 22px 70px 4px;
   border-radius: 35px;
+  border: .1px solid black;
 }
 
 .home-project-display {
@@ -255,8 +254,9 @@
 }
 
 .home-project-display-elements {
+  margin: auto;
   margin-top: 30px;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
@@ -267,11 +267,17 @@
   display: grid;
   grid-template-columns: 60% 40%;
   border-radius: 20px;
-  height: 330px;
-  width: 700px;
+  height: 100%;
+  width: 100%;
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.776) 0px 22px 70px 4px;
   border: 2px solid black;
+}
+
+.home-project-container:hover {
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  cursor: pointer;
+  border: 2px solid white;
 }
 
 .home-project-skill {
@@ -290,11 +296,22 @@
 
 .project-name {
   text-decoration: underline;
-  text-shadow: 2px 2px #033faf;
+  text-shadow:2px 2px rgb(180, 7, 180);
+  font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
+  transition: all 250ms;
+  border-radius: 100%;
+}
+
+.project-name:hover {
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  cursor: pointer;
 }
 
 .project-description {
   font-size: 1.15em;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .home-project-thumbnail-box {
@@ -303,8 +320,9 @@
 }
 
 .home-project-skills {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
   gap: 8px;
   justify-items: center;
   align-items: center;
@@ -313,12 +331,21 @@
 .home-project-thumbnail {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px 0 0 20px;
 }
 
 .home-view-projects-title {
   text-decoration: underline;
   font-size: 2rem;
+  font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
+  transition: all 250ms;
+}
+
+.home-view-projects-title:hover{
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(1deg);
+  cursor: pointer;
+  border: .1px solid white;
 }
 
 .home-view-skills {

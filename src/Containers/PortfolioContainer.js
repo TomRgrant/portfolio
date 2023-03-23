@@ -15,18 +15,19 @@ const PortfolioContainer = () => {
         skills: [
             {name: 'JavaScript', logo: 'https://miro.medium.com/v2/resize:fit:1024/1*S-nV902O1yWwpFbxn0P_xA.png', alt: 'javascript logo'},
             {name: 'React', logo: 'https://nextsoftware.io/files/images/logos/main/reactjs-logo.png', alt: 'react logo'},
-            {name: 'Python', logo: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png', alt: 'python logo'},
+            {name: 'Python3', logo: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png', alt: 'python logo'},
             {name: 'SQL', logo: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png', alt: 'sql logo'},
-            {name: 'HTML', logo: 'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png', alt: 'html logo'},
-            {name: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png', alt: 'css logo'},
+            {name: 'HTML5', logo: 'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png', alt: 'html logo'},
+            {name: 'CSS3', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png', alt: 'css logo'},
             {name: 'Git', logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png', alt: 'git logo'},
             {name: 'GitHub', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png', alt: 'github logo'},
             {name: 'Flask', logo: 'https://d4.alternativeto.net/jmtD1yk6SqztgpCSDhUSho4OBc5dw1d9eIdiZktqzOY/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9mbGFza18yNzAwNC5wbmc.png', alt: 'flask logo'},
+            {name: 'MongoDB', logo: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld', alt: 'mongo db logo'}
         ],
         projects: [{
-            name: "Who's That Pokemon!?",
-            skills: ["JavaScript", "React", "HTML", "CSS", "github"],
-            description: `Whos that pokemon is a SPA app that uses the pokemon api to 
+            name: "Who's That Pokémon!?",
+            skills: ["JavaScript", "React", "HTML5", "CSS3", "github"],
+            description: `Whos that Pokémon is a SPA app that uses the pokemon api to 
             create a game where the user is show a image of a pokemon, they then have
             to guess it's name.`,
             thumbnail: "https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg",
@@ -35,7 +36,7 @@ const PortfolioContainer = () => {
         },
         {
             name: "Gym Admin app",
-            skills: ["Python", "flask", "HTML", "CSS"],
+            skills: ["Python3", "flask", "HTML5", "CSS3"],
             description: 'gym app',
             thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
             screenshots: [],
@@ -43,7 +44,7 @@ const PortfolioContainer = () => {
         },
         {
             name: "Gym Admin app",
-            skills: ["Python", "flask", "HTML", "CSS"],
+            skills: ["Python3", "flask", "HTML5", "CSS3"],
             description: 'gym app',
             thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
             screenshots: [],
@@ -51,7 +52,7 @@ const PortfolioContainer = () => {
         },
         {
             name: "Gym Admin app",
-            skills: ["Python", "flask", "HTML", "CSS"],
+            skills: ["Python3", "flask", "HTML5", "CSS3"],
             description: 'gym app',
             thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
             screenshots: [],
@@ -59,7 +60,7 @@ const PortfolioContainer = () => {
         },
         {
             name: "Gym Admin app",
-            skills: ["Python", "flask", "HTML", "CSS"],
+            skills: ["Python3", "flask", "HTML5", "CSS3"],
             description: 'gym app',
             thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
             screenshots: [],
