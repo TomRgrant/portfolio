@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom"
+import { Link } from "react-scroll"
+import Thomas_Grant_CV from "../images/Thomas_Grant_CV.pdf"
 
-const NavBar = () => {
+const NavBar = ({ handleClick }) => {
 
 
 
@@ -11,11 +12,25 @@ return(
     <>
         <section className="nav-bar">
             <div className="nav-pages">
-                <button class="button-33" role="button">Home</button>
-                <button class="button-33" role="button">About Me</button>
-                <button class="button-33" role="button">Skills</button>
-                <button class="button-33" role="button">Projects</button>
+                <Link to="about-me" spy={true} smooth={true} offset={-10} duration={500}>
+                <button onClick={handleClick} id="aboutMe" class="button-33" role="button">About Me</button>
+                </Link>
+                <Link to="skill-display" spy={true} smooth={true} offset={-10} duration={500}>
+                <button handleClick={handleClick} id="skills" class="button-33" role="button">Skills</button>
+                </Link>
+                <Link to="home-view-projects-title" spy={true} smooth={true} offset={-10} duration={500}>
+                <button onClick={handleClick} id="projects" class="button-33" role="button">Projects</button>
+                </Link>
+                <a href={Thomas_Grant_CV} download={Thomas_Grant_CV}>
+                    <button className="button-33">Download My CV</button>
+                </a>
             </div>
+
+
+
+
+
+
 
             <div className="nav-links">
                     <a className="nav-links" href="https://github.com/TomRgrant" target="_blank"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="git hub logo, link to thomas grant's github profile"/> </a>

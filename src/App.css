@@ -3,11 +3,6 @@
   overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -63,9 +58,18 @@
 .nav-pages {
   margin-left: 3em;
   display: flex;
-  gap: 4em;
+  gap: 4rem;
   font-size: 1.5em;
   padding: 1em;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-pages {
+    margin-left: 0;
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (max-width: 82em) {
@@ -130,8 +134,15 @@
 .about-me {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 82em) {
@@ -143,14 +154,14 @@
 .about-me-box {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 60%;
   height: 100%;
   margin: auto;
   justify-content: center;
 }
 
 .pfp {
-  width: 30%;
+  width: 40%;
   padding: 1.5em;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -172,7 +183,11 @@
 
 .about-me-info-box {
   border-radius: 20px;
-  margin: 20px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 82em) {
@@ -183,7 +198,8 @@
 }
 
 .about-me-text {
-  font-size: x-large;
+  font-size: xx-large;
+  font-family: 'Heebo', sans-serif;
   padding: 0.5em;
   backdrop-filter: blur(10px);
   margin-top: 20px;
@@ -193,6 +209,7 @@
 }
 
 .about-me-contact-info {
+  font-family: 'Heebo', sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -245,9 +262,15 @@
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+@media only screen and (max-width: 82em) {
+  .skill-logo{
+    height: 60px;
+  }
+}
+
 .skill-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: .5em;
   column-gap: 1em;
   justify-items: center;
@@ -302,7 +325,7 @@
 }
 
 .home-project-display {
-  width: 80%;
+  width: 90%;
   margin-bottom: 20px;
   margin: auto;
   padding-bottom: 20px;
@@ -319,8 +342,9 @@
 }
 
 .home-project-container {
+  font-family: 'Heebo', sans-serif;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   border-radius: 20px;
   height: 100%;
   width: 100%;
@@ -353,13 +377,12 @@
 
 @media only screen and (max-width: 82em) {
   .home-project-thumbnail-box{
-    border-radius: 0;
   }
 }
 
 @media only screen and (max-width: 82em) {
   .home-project-thumbnail{
-    border-radius: 0;
+    border-radius: 100%;
   }
 }
 
@@ -390,12 +413,7 @@
   transition: all 250ms;
   border-radius: 100%;
   font-size: xx-large;
-}
-
-.project-name:hover {
-  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
-  cursor: pointer;
+  padding: 0;
 }
 
 .project-description {
@@ -405,8 +423,12 @@
 }
 
 .home-project-thumbnail-box {
+  display: flex;
   max-height: 100%;
   overflow-y:hidden;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-project-skills {
@@ -421,7 +443,27 @@
 .home-project-thumbnail {
   width: 100%;
   height: 100%;
-  border-radius: 20px 0 0 20px;
+  object-fit:cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.source-code-link {
+  position: absolute;
+  bottom: 5px;
+  background-color: #00307599;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  text-shadow: 2px 2px rgb(180, 7, 180);
+  border: 1px solid black;
+}
+
+.source-code-link:hover {
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  cursor: pointer;
+  border: 1px solid white;
 }
 
 .home-view-projects-title {
@@ -434,8 +476,8 @@
 .home-view-projects-title:hover{
   box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(1deg);
-  cursor: pointer;
   border: .1px solid white;
+  background-color: rgba(14, 10, 95, 0.7);
 }
 
 .home-view-skills {
@@ -449,6 +491,7 @@
 .wrapper {
   background: url(images/background.jpg) no-repeat fixed;
   background-size: cover;
+  padding: 0.5em;
 }
 
 

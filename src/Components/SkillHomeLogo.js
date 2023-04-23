@@ -20,16 +20,19 @@ const SkillHomeLogo = ({selectedProject, skills}) => {
         return <ProjectSkillLogo key={index} skill={skill} />
     });
 
-
+    const gotoLink = () => {
+        window.open(selectedProject.url)
+    }
 
 return(
     <>
     <div className="home-project-container">
         <div className="home-project-thumbnail-box">
-            <img className="home-project-thumbnail" src={selectedProject.thumbnail} alt="Thumbnail of project" />
+            <a className="source-code-link" href={selectedProject.sourceCode}>Source Code</a>
+            <img onClick={gotoLink} value={selectedProject.url} className="home-project-thumbnail" src={selectedProject.thumbnail} alt="Thumbnail of project" />
         </div>
 
-        <div className="home-project-info">
+        <div className="home-project-info" onClick={gotoLink}>
             <h2 className="project-name">{selectedProject.name}</h2>
             <div className="home-project-skills">
                 {skillLogoNodes}

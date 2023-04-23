@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import SkillHomeLogo from "./SkillHomeLogo";
 
 const ProjectHomeCard = ({ projects, skills }) => {
+
 
     const projectNodes = projects.map((project, index) => {
         return (
