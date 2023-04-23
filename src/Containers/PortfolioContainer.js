@@ -7,6 +7,7 @@ import pfp from "../images/pfp.png"
 import pokemonthumb from "../images/pokemon-thumbnail.png"
 import gymAdmin from "../images/gym_admin.png"
 import hackerNews from "../images/hacker_news.png"
+import mindBlank from "../images/mind_blank.png"
 
 const PortfolioContainer = () => {
 
@@ -32,6 +33,20 @@ const PortfolioContainer = () => {
             {name: 'MongoDB', logo: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld', alt: 'mongo db logo'},
         ],
         projects: [{
+                name: "MInd Blank",
+                skills: ["React", "javascript", "html5", "css3", "github", "git"],
+                url: "https://tomrgrant.github.io/Mind-Blank/",
+                sourceCode: "https://github.com/TomRgrant/Mind-Blank",
+                description: `Mind Blank was a group project where we were given 7 days to design plan and build 
+                an educational game app, as a group we decided we wanted to create a triva quiz app, we found an
+                 api that we wanted to use and went from there, our agreed upon MVP was a game where the player
+                  had a certain amount of time to answer as many questions as possible, the player should also 
+                  be able to select the category and difficulty of the question given to them.`,
+                thumbnail: mindBlank,
+                screenshots: [],
+                videoDemo: "",
+            },
+            {
             name: "Who's That Pokémon!?",
             url: "https://tomrgrant.github.io/Pokemon-api-weekend-hw/",
             sourceCode: "https://github.com/TomRgrant/Pokemon-api-weekend-hw",
@@ -67,14 +82,6 @@ const PortfolioContainer = () => {
             function of the app would work, we decided we wanted to add a search feature where it shows you 
             articles that have the search text in it, it also highlights the search text in the title.`,
             thumbnail: hackerNews,
-            screenshots: [],
-            videoDemo: "",
-        },
-        {
-            name: "Example app",
-            skills: ["Python3", "flask", "HTML5", "CSS3"],
-            description: 'example app',
-            thumbnail: "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png",
             screenshots: [],
             videoDemo: "",
         },
