@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0a085cfe.css",
-    "main.js": "/portfolio/static/js/main.21e8ddff.js",
+    "main.css": "/portfolio/static/css/main.52c623e4.css",
+    "main.js": "/portfolio/static/js/main.15523b79.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/pfp.png": "/portfolio/static/media/pfp.ba103c3c1dbbcd81bccd.png",
+    "static/media/pokemon-thumbnail.png": "/portfolio/static/media/pokemon-thumbnail.058c99614fe2746039c6.png",
+    "static/media/gym_admin.png": "/portfolio/static/media/gym_admin.6b4c54006f496faf1d65.png",
+    "static/media/background.jpg": "/portfolio/static/media/background.54595c9eb90de893198f.jpg",
+    "static/media/Thomas_Grant_CV.pdf": "/portfolio/static/media/Thomas_Grant_CV.d6e3cc8bb8607112efdb.pdf",
+    "static/media/hacker_news.png": "/portfolio/static/media/hacker_news.688a202150d1fccc0b77.png",
     "index.html": "/portfolio/index.html",
-    "main.0a085cfe.css.map": "/portfolio/static/css/main.0a085cfe.css.map",
-    "main.21e8ddff.js.map": "/portfolio/static/js/main.21e8ddff.js.map",
+    "main.52c623e4.css.map": "/portfolio/static/css/main.52c623e4.css.map",
+    "main.15523b79.js.map": "/portfolio/static/js/main.15523b79.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a085cfe.css",
-    "static/js/main.21e8ddff.js"
+    "static/css/main.52c623e4.css",
+    "static/js/main.15523b79.js"
   ]
 }
