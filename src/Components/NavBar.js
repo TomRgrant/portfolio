@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-scroll"
-import Thomas_Grant_CV from "../images/Thomas_Grant_CV.pdf"
 
 const NavBar = ({ handleClick }) => {
 
@@ -12,18 +11,18 @@ return(
     <>
         <section className="nav-bar">
             <div className="nav-pages">
-                <Link to="about-me" spy={true} smooth={true} offset={-10} duration={500}>
+                <Link to="wrapper" spy={true} smooth={true} offset={-90} duration={500}>
                 <button onClick={handleClick} id="aboutMe" class="button-33" role="button">About Me</button>
                 </Link>
-                <Link to="skill-display" spy={true} smooth={true} offset={-10} duration={500}>
+                <Link to="skill-display" spy={true} smooth={true} offset={-90} duration={500}>
                 <button handleClick={handleClick} id="skills" class="button-33" role="button">Skills</button>
                 </Link>
-                <Link to="home-view-projects-title" spy={true} smooth={true} offset={-10} duration={500}>
+                <Link to="home-view-projects-title" spy={true} smooth={true} offset={-90} duration={500}>
                 <button onClick={handleClick} id="projects" class="button-33" role="button">Projects</button>
                 </Link>
-                <a href={Thomas_Grant_CV} download={Thomas_Grant_CV}>
-                    <button className="button-33">Download My CV</button>
-                </a>
+                <Link to="cv-button" spy={true} smooth={true} offset={-10} duration={500}>
+                <button onClick={handleClick} id="projects" class="button-33" role="button">Download My CV</button>
+                </Link>
             </div>
 
 

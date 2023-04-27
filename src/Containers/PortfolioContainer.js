@@ -8,6 +8,8 @@ import pokemonthumb from "../images/pokemon-thumbnail.png"
 import gymAdmin from "../images/gym_admin.png"
 import hackerNews from "../images/hacker_news.png"
 import mindBlank from "../images/mind_blank.png"
+import Thomas_Grant_CV from "../images/Thomas_Grant_CV.pdf"
+
 
 const PortfolioContainer = () => {
 
@@ -33,11 +35,11 @@ const PortfolioContainer = () => {
             {name: 'MongoDB', logo: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld', alt: 'mongo db logo'},
         ],
         projects: [{
-                name: "MInd Blank",
+                name: "Mind Blank",
                 skills: ["React", "javascript", "html5", "css3", "github", "git"],
                 url: "https://tomrgrant.github.io/Mind-Blank/",
                 sourceCode: "https://github.com/TomRgrant/Mind-Blank",
-                description: `Mind Blank was a group project where we were given 7 days to design plan and build 
+                description: `Mind Blank was a group project where we were given 7 days to design, plan and build 
                 an educational game app, as a group we decided we wanted to create a triva quiz app, we found an
                  api that we wanted to use and went from there, our agreed upon MVP was a game where the player
                   had a certain amount of time to answer as many questions as possible, the player should also 
@@ -98,13 +100,13 @@ return(
 
             <div className="z1">
             <section className="about-me">
+                <div className="pfp" >
+                    <img className="pfp-img" src={tom.pfp} />
+                </div>
                 <div className="about-me-box">
                     <AboutMe tom={tom} />
                 </div>
 
-                <div className="pfp" >
-                    <img className="pfp-img" src={tom.pfp} />
-                </div>
             </section>
 
             <section className="skill-display">
@@ -117,6 +119,12 @@ return(
                 <div className="home-project-display-elements">
                     <ProjectHomeCard projects={tom.projects} skills={tom.skills} />
                 </div>
+            </section>
+
+            <section className="cv-button-div">
+                <a href={Thomas_Grant_CV} download={Thomas_Grant_CV}>
+                    <button className="cv-button">Download My CV</button>
+                </a>
             </section>
             </div>
     </div>

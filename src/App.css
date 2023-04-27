@@ -40,6 +40,9 @@
 
 /* Nav Bar section --------------------------------------------*/
 .nav-bar {
+  z-index: 5318008;
+  position: fixed;
+  width: 100%;
   display: flex;
   background-color: black;
   justify-content: space-between;
@@ -60,7 +63,7 @@
   display: flex;
   gap: 4rem;
   font-size: 1.5em;
-  padding: 1em;
+  padding: 0.5em;
   width: auto;
   flex-wrap: wrap;
 }
@@ -173,6 +176,9 @@
   width: 100%;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scaleX(-1);
+  float: left;
+  shape-outside: circle();
 }
 
 .pfp :hover {
@@ -198,7 +204,7 @@
 }
 
 .about-me-text {
-  font-size: xx-large;
+  font-size: 2em;
   font-family: 'Heebo', sans-serif;
   padding: 0.5em;
   backdrop-filter: blur(10px);
@@ -206,6 +212,7 @@
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 20px;
   width: 100%;
+  text-align: left;
 }
 
 .about-me-contact-info {
@@ -240,6 +247,7 @@
   box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(2deg);
   transition: 400ms;
+  border-radius: 15%;
 }
 
 .about-me-contact-info > a {
@@ -256,9 +264,11 @@
 
 .skill-logo {
   height: 80px;
-  border: 1px solid black;
-  border-radius: 40px;
+  border: 5px solid white;
+  scale: 0.8;
+  border-radius: 25%;
   background-color: white;
+  object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
@@ -296,13 +306,15 @@
 
 .skill-display > .home-view-skills {
   font-size: 3em;
-  font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 7px 20px;
   text-shadow: 2px 2px rgb(180, 7, 180);
   width: 4em;
   margin: auto;
   padding: .3em;
   margin-bottom: 30px;
-  box-shadow: rgba(0, 0, 0, 0.776) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0) 0px 22px 70px 4px;
+  background-color: rgba(14, 10, 95, 0.7);
   border-radius: 35px;
 }
 
@@ -393,6 +405,7 @@
 }
 
 .home-project-skill {
+  margin-top: 15px;
   height: 45px;
   border: 1px solid black;
   border-radius: 50px;
@@ -448,8 +461,6 @@
 }
 
 .source-code-link {
-  position: absolute;
-  bottom: 5px;
   background-color: #00307599;
   color: white;
   padding: 5px;
@@ -471,6 +482,7 @@
   font-size: rem;
   font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
   transition: all 250ms;
+  background-color: rgba(14, 10, 95, 0.7);
 }
 
 .home-view-projects-title:hover{
@@ -485,10 +497,35 @@
   font-size: 2rem;
 }
 
+/* ---------------------------------------------------------- */
+.cv-button-div {
+  padding: 4em;
+}
+
+.cv-button {
+  color: white;
+  border: 1px solid black;
+  text-decoration: underline;
+  font-size: 4em;
+  font-family: 'Titillium Web', sans-serif;  padding: 7px 20px;
+  transition: all 250ms;
+  background-color: rgba(9, 1, 157, 0.7);
+  border-radius: 20px;
+  text-shadow: 2px 2px rgb(180, 7, 180);
+}
+
+.cv-button:hover {
+  box-shadow: rgba(134, 53, 233, 0.35) 0 -25px 18px -14px inset,rgba(146, 30, 218, 0.25) 0 1px 2px,rgba(176, 24, 231, 0.25) 0 2px 4px,rgba(158, 24, 225, 0.25) 0 4px 8px,rgba(155, 21, 212, 0.25) 0 8px 16px,rgba(157, 29, 220, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(1deg);
+  border: 1px solid white;
+  background-color: rgba(14, 10, 95);
+  cursor: pointer;
+}
 
 /* Scrolling background -------------------------- */
 
 .wrapper {
+  margin-top: 85px;
   background: url(images/background.jpg) no-repeat fixed;
   background-size: cover;
   padding: 0.5em;
